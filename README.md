@@ -1,6 +1,6 @@
 # InferenceEngine
 Propositional Logic Inference Engine, working with defined format and natural language.
--------------------------------------------------------------------------------------------------------------
+
 Student Details:
 -------------------------------------------------------------------------------------------------------------
 Aleksandar Manev	100586500
@@ -21,20 +21,20 @@ Features / Bugs / Missings
 
 Test cases: 
 =============================================================================================================
-TELL
-a=>b; b=>c; b&c=>a;
-ASK
-a
+    TELL
+    a=>b; b=>c; b&c=>a;
+    ASK
+    a
 
-TELL
-p2=> p3; p3 => p1; c => e; b&e => f; f&g => h; p1=>d; p1&p3 => c; a; b; p2;
-ASK
-d
+    TELL
+    p2=> p3; p3 => p1; c => e; b&e => f; f&g => h; p1=>d; p1&p3 => c; a; b; p2;
+    ASK
+    d
 
-TELL
-if I'm happy then I win. If I win then You Loose. if you play then you have fun. If I have fun and you have fun then It's a good day. If It's a good day and I dance then you dance. If you loose, you are broke. If you loose and I win then you play. You have fun. I'm millionaire. I have fun. I'm happy.
-ASK
-You Loose.
+    TELL
+    if I'm happy then I win. If I win then You Loose. if you play then you have fun. If I have fun and you have fun then It's a good day. If It's a good day and I dance then you dance. If you loose, you are broke. If you loose and I win then you play. You have fun. I'm millionaire. I have fun. I'm happy.
+    ASK
+    You Loose.
 
 Disscuss Outputs:
 -------------------------------------------------------------------------------------------------------------
