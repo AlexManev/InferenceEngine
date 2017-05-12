@@ -23,14 +23,8 @@ public class InferenceEngine {
 		String[] parts_kb = kb.split(";");
 		for(String part : parts_kb) {
 			_kb.add(new String(part));
-		}
-		
-		
+		}	
 		InitVariables();
-		
-		//String nls = "If I'm sad, I'm crying. If I'm sad and I'm sick then I'm sleepy. If i'm sleepy and I'm crying and you're sick then I'm jumping. You're sick.";
-		//System.out.println(nls);
-		//System.out.println(NLT.Translate(nls));
 	}
 	
 	private void InitVariables() {
@@ -58,10 +52,9 @@ public class InferenceEngine {
 
 	public void Solve (String method) {
 		Method engine;
-		switch(method)
-		{
+		switch(method){
 			case "TT":	
-				engine = new TruthTable(_kb, _variables);
+				engine = new TruthTable(_kb,_query, _variables);
 				break;
 			case "FC":
 				engine = new ForwardChaining(_kb,_query);
@@ -73,9 +66,11 @@ public class InferenceEngine {
 				engine = null;
 				System.out.println("Enter TT, FC or BC as first argument.");
 		}
-		if(_isNL)
-			engine.solve(NLT);
-		else
-			engine.solve(null);
+		if(engine != null) {
+			if(_isNL)
+				engine.solve(NLT);
+			else
+				engine.solve(null);
+		}
 	}
 }

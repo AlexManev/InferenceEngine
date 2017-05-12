@@ -1,4 +1,13 @@
 TELL
+a&f=>b ; d=>f; d=>g; e=>d; p1=>e;e&p1=>p6 ;c=>j; c&i=>h; j=>i;
+ASK
+p6 
+
+
+
+
+
+TELL
 if I'm happy then I win. If I win then You Loose. if you play then you have fun. If I have fun and you have fun then It's a good day. If It's a good day and I dance then you dance. If you loose, you are broke. If you loose and I win then you play. You have fun. I'm millionaire. I have fun. I'm happy.
 ASK
 You Loose.

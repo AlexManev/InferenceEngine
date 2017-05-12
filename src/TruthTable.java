@@ -2,9 +2,11 @@ import java.util.*;
 
 public class TruthTable extends Method{
 	public List<String> _variables;
+	public String _alpha;
 	private boolean _table[][];
-	public TruthTable(List<String> kb, List<String> variables) {
+	public TruthTable(List<String> kb,String alpha, List<String> variables) {
 		super(kb);
+		_alpha = alpha;
 		_variables = variables;
 		InitTT(_variables.size());
 	}
@@ -26,17 +28,17 @@ public class TruthTable extends Method{
 			   else
 				   _table[i][j] = false;
 			}
-			//System.out.println(binaryRow);
 		}
 	}
 	
-	private int getIndexOf(String var) {
+	private Integer getIndexOf(String var) {
 		for(int i=0; i<_variables.size();i++) {
 			if(_variables.get(i).equals(var))
 				return i;
 		}
-		return 0;
+		return null;
 	}
+	
 	private void PrintRow(int row, NLTranslator NLT) {
 		System.out.print("Row:" + row);
 		for(int col=0;col<_variables.size();col++) {
@@ -101,8 +103,19 @@ public class TruthTable extends Method{
 				}
 			}
 			if(rowResult == true) {
-				PrintRow(i,NLT);
-				finalCount++;
+				if(!_alpha.contains("~")) {
+					if(getIndexOf(_alpha) != null && _table[i][getIndexOf(_alpha)]) {
+						PrintRow(i,NLT);
+						finalCount++;
+					}
+				}else {
+					String alphaVar = _alpha.substring(1);
+					if(getIndexOf(alphaVar) != null && !_table[i][getIndexOf(alphaVar)]) {
+						PrintRow(i,NLT);
+						finalCount++;
+					}
+				}
+					
 			}
 		}
 		
