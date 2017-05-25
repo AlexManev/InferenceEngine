@@ -65,13 +65,13 @@ Could Have                          | Example       | Translated As
 ----------------------------------- | ------------- | --------------
 Conjunction                         | and           | &
 Implementation                      | then or ","   | =>
-If (ignored)                        | If I am happy | I am happy
+If (ignored)                        | If I am happy | a
 
 Using Regular expressing,
-then([\s\S]*) - select everything after "then"
-,([\\s\\S]*)  - select everything after ","
-^(.*?)then    - select everything before "then"
-^(.*?),       - select everything before ","
+- then([\s\S]*) - select everything after "then"
+- ,([\\s\\S]*)  - select everything after ","
+- ^(.*?)then    - select everything before "then"
+- ^(.*?),       - select everything before ","
 
 We were able to split the rule sentence into two sides, left and right side of the implementation. Form there we split each side on "and" and each one of the values seperated by "and" vas representing a variable.
 
