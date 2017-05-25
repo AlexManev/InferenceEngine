@@ -3,21 +3,31 @@ Propositional Logic Inference Engine, working with defined format and natural la
 
 Student Details:
 -------------------------------------------------------------------------------------------------------------
-Aleksandar Manev	100586500
-Cameron Watts   	
+- Aleksandar Manev	100586500
+- Cameron Watts   	7713266
 
-Group Number: 			
+Group Number: COS30019_A02_T034 	
 
 
 Features / Bugs / Missings
 =============================================================================================================
 - **Truth Table**:
-
+    - Missing: N/A
+    - Bugs: None known.
+    - Feature: Accepts more complicated KB. (eg. a&b=>b&c)
+    - Feature: You can ask it a negation using "~". (eg. ~a)
 - **Forward Chaining**:
-
+    - Missing: N/A
+    - Bugs: None known.
+    - Feature: No extra features.
 - **Backwards Chaining**:
-
+    - Missing: N/A
+    - Bugs: None known.
+    - Feature: No extra features.
 - **Natural Language**:
+    - Missing: N/A
+    - Bugs: None known.
+    - Feature: No extra features.
 
 Test cases: 
 =============================================================================================================
@@ -42,11 +52,6 @@ Test cases:
     l
     
     
-
-Disscuss Outputs:
--------------------------------------------------------------------------------------------------------------
-
-Natural Language Test case will output in Natural Language (eg. YES: i'm happy. i win. you loose.)
 
 Research
 =============================================================================================================
@@ -94,10 +99,12 @@ A modern Approach III Edition” by Stuart J Russell and Peter Norvig to
 understand better how the the Forward Chaining  and Backward Chaining
 algorithms work.
 
-http://stackoverflow.com/questions/18413204/regular-expression-to-select-everything-before-and-up-to-a-particular-text
-http://stackoverflow.com/questions/10813154/converting-number-to-letter
-https://people.cs.pitt.edu/~milos/courses/cs2740/Lectures/class6.pdf
-http://stackoverflow.com/questions/10723168/generating-truth-tables-in-java
+- http://stackoverflow.com/questions/18413204/regular-expression-to-select-everything-before-and-up-to-a-particular-text
+    - Used Regular expression for the natural language processing.
+- https://people.cs.pitt.edu/~milos/courses/cs2740/Lectures/class6.pdf
+    - This slides helped us understand backwards and forward chaining.
+- http://stackoverflow.com/questions/10723168/generating-truth-tables-in-java
+    - Generating truth table using binary representation of the row number.
 
 Notes: 
 =============================================================================================================
@@ -121,5 +128,5 @@ We had 5 tasks to complete in total:
 3. Backwards Chaining - Aleksandar Manev
 4. Research - Aleksandar Manev
 5. Documentation - Cameron Watts
-Alex developed 60% of the assigment. Due to he's more free scadule he was confident to do the Trurh table, Backwards chaining and the Research part of the assigment. Aleks's development went smoothly being able to finish both of the algorithms for TT and BC in the first two days of the assigment period. This gave him time to work on the Reasearch and finish it by the end of the week. Aleks's found some bugs in the BC implementation and he re-build the algorythm to fix this issue. It took him 1 day to finish finalize the BC algorithm.
-Cameron developed 40% of the assigment. He worked on the forward chaining algorithm and documentation of the code. His development went smooth with being able to finish his algorythm in the first week of the assigment period. There was only one bug that we fixed it later on.
+- Alex developed 60% of the assigment. Due to he's more free scadule he was confident to do the Trurh table, Backwards chaining and the Research part of the assigment. Aleks's development went smoothly being able to finish both of the algorithms for TT and BC in the first two days of the assigment period. This gave him time to work on the Reasearch and finish it by the end of the week. Aleks's found some bugs in the BC implementation and he re-build the algorythm to fix this issue. It took him 1 day to finish finalize the BC algorithm.
+- Cameron developed 40% of the assigment. He worked on the forward chaining algorithm and documentation of the code. His development went smooth with being able to finish his algorythm in the first week of the assigment period. There was only one bug that we fixed it later on.
