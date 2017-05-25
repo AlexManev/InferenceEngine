@@ -92,7 +92,7 @@ public class TruthTable extends Method{
 			rowResult = true;
 			//check every rule. 
 			for(String rule : _kb ) {
-				//split rules on left part and right part of the implication.
+				//split rules on leftpart and right part of the implication.
 				String[] parts = rule.split("=>");
 				//if implication exists
 				if(parts.length == 2) {
@@ -150,7 +150,7 @@ public class TruthTable extends Method{
 				//check if KB entails query alpha if and only if alpha is true in all worlds wherein KB is true.
 				if(!_alpha.contains("~")) {
 					if(getIndexOf(_alpha) != null && _table[i][getIndexOf(_alpha)]) {
-						PrintRow(i,NLT);
+						//PrintRow(i,NLT);
 						finalCount++;
 					}else{
 						kBentailsAlpha = false;
@@ -159,7 +159,7 @@ public class TruthTable extends Method{
 				}else {
 					String alphaVar = _alpha.substring(1);
 					if(getIndexOf(alphaVar) != null && !_table[i][getIndexOf(alphaVar)]) {
-						PrintRow(i,NLT);
+						//PrintRow(i,NLT);
 						finalCount++;
 					}else{
 						kBentailsAlpha = false;
