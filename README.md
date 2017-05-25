@@ -83,6 +83,7 @@ We were able to split the rule sentence into two sides, left and right side of t
 Example:
 ------------------------------------------------------------------------------------------------------------
 If I am happy, I am winning. If I am winning and I am dancing then you are winning. I am happy.
+
 Translation: a=>b;b&c=>d;a;
 
 Having this translated KB I can use it my TT, BC, FC algorithms.
@@ -128,5 +129,5 @@ We had 5 tasks to complete in total:
 3. Backwards Chaining - Aleksandar Manev
 4. Research - Aleksandar Manev
 5. Documentation - Cameron Watts
-- Alex developed 60% of the assigment. Due to he's more free scadule he was confident to do the Trurh table, Backwards chaining and the Research part of the assigment. Aleks's development went smoothly being able to finish both of the algorithms for TT and BC in the first two days of the assigment period. This gave him time to work on the Reasearch and finish it by the end of the week. Aleks's found some bugs in the BC implementation and he re-build the algorythm to fix this issue. It took him 1 day to finish finalize the BC algorithm.
+- Aleksandar developed 60% of the assigment. Due to he's more free scadule he was confident to do the Trurh table, Backwards chaining and the Research part of the assigment. Aleks's development went smoothly being able to finish both of the algorithms for TT and BC in the first two days of the assigment period. This gave him time to work on the Reasearch and finish it by the end of the week. Aleks's found some bugs in the BC implementation and he re-build the algorythm to fix this issue. It took him 1 day to finish finalize the BC algorithm.
 - Cameron developed 40% of the assigment. He worked on the forward chaining algorithm and documentation of the code. His development went smooth with being able to finish his algorythm in the first week of the assigment period. There was only one bug that we fixed it later on.
