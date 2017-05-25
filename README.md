@@ -110,6 +110,9 @@ algorithms work.
 Notes: 
 =============================================================================================================
 The UI works same as its specified on the requirements.
+- java -jar engine.jar TT input.txt
+- java -jar engine.jar FC input.txt
+- java -jar engine.jar BC input.txt
 
 Natural Language works on Horn Clause type of kb
 
